@@ -91,7 +91,7 @@ bool JlCompress::compressFile(QuaZip* zip, QString fileName, QString fileDest) {
     inFile.setFileName(fileName);
     if (!inFile.open(QIODevice::ReadOnly)) {
         #ifdef Q_DEBUG
-            qDebug() << "**** JlCompress::compressFile() - Fatal error: can't open input file -> " << fileName;
+            qDebug() << "**** JlCompress::compressFile() - Fatal error: can't open input file (no read permission) -> " << fileName;
         #endif
         return false;
     }
