@@ -1,7 +1,7 @@
 TEMPLATE = lib
 CONFIG += qt warn_on
 QT -= gui
-DEFINES += Q_DEBUG
+# DEFINES += Q_DEBUG
 
 # Creating pkgconfig .pc file
 CONFIG += create_prl no_install_prl create_pc
